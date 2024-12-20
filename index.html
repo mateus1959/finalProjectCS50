@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <label for="principal">Enter your principal:</label>
+    <input type="text" id="principal" name="" minlength="0" maxlength="9">
+    <label for="rate">interest rate:</label>
+    <input type="text" id="rate" name="" minlength="0" maxlength="9">
+    <label for="time">time period (years):</label>
+    <input type="text" id="time" name="" minlength="0" maxlength="9">
+    <fieldset>
+        <legend>Select Compounding Frequency:</legend>
+      
+        <div>
+          <input type="radio" id="annually" name="compounding" value="1" checked>
+          <label for="annually">Annually (1 time per year)</label>
+        </div>
+      
+        <div>
+          <input type="radio" id="semiannually" name="compounding" value="2">
+          <label for="semiannually">Semi-annually (2 times per year)</label>
+        </div>
+      
+        <div>
+          <input type="radio" id="quarterly" name="compounding" value="4">
+          <label for="quarterly">Quarterly (4 times per year)</label>
+        </div>
+      
+        <div>
+          <input type="radio" id="monthly" name="compounding" value="12">
+          <label for="monthly">Monthly (12 times per year)</label>
+        </div>
+      
+        <div>
+          <input type="radio" id="daily" name="compounding" value="365">
+          <label for="daily">Daily (365 times per year)</label>
+        </div>
+    </fieldset>
+    <button onclick="enter()">Enter</button>
+</body>
+</html>
